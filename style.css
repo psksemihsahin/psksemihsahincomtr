@@ -436,11 +436,11 @@ body {
 
 .porthole {
   width: 150vmin;
-  height: 150vmin;
+  height: 90vmin;
   background-image: url("https://res.cloudinary.com/digquktgx/image/upload/v1743520083/i-made-a-3d-model-of-saul-goodmans-office-v0-ba1v6ta611v91_b2bi7c.webp");
   background-size: contain;
   background-position: center;
-  top: calc(50% - 77vmin);
+  top: calc(70% - vmin);
   right: 99%;
   transform: rotateY(90deg) rotateZ(0) translateX(50%);
   transform-origin: center right;
