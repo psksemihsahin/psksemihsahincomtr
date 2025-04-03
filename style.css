@@ -440,7 +440,7 @@ body {
   background-image: url("https://res.cloudinary.com/digquktgx/image/upload/v1743520083/i-made-a-3d-model-of-saul-goodmans-office-v0-ba1v6ta611v91_b2bi7c.webp");
   background-size: contain;
   background-position: center;
-  top: calc(50% - 90vmin);
+  top: calc(50% - 77vmin);
   right: 99%;
   transform: rotateY(90deg) rotateZ(0) translateX(50%);
   transform-origin: center right;
