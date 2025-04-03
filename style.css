@@ -91,7 +91,7 @@ body {
   box-shadow: inset 0 0 5vmin rgba(0, 0, 0, 0.5),
     inset 0 0 15vmin rgba(0, 0, 0, 0.5);
   border: 3px solid #222;
-  background-image: url("https://assets.codepen.io/5896374/tex-cement-brick-wall.jpg");
+  background-image: url("https://res.cloudinary.com/digquktgx/image/upload/v1743521081/Screenshot_2025-04-01_182405_og0fsp.png");
   background-position: bottom center;
   background-size: auto 115%;
   transform-style: preserve-3d;
@@ -153,7 +153,7 @@ body {
   height: calc(2 * var(--depth));
   transform: rotateX(90deg) translateY(calc(-1 * var(--depth))) rotateY(180deg);
   transform-origin: top;
-  background-image: url("https://assets.codepen.io/5896374/tex-ceiing.jpg");
+  background-image: url("https://res.cloudinary.com/digquktgx/image/upload/v1743521066/istockphoto-466855843-612x612_aixhus.jpg");
   background-size: 75%;
   background-repeat: repeat;
   background-position: top right;
@@ -164,7 +164,7 @@ body {
   height: calc(2 * var(--depth));
   transform: rotateX(-90deg) translateY(calc(1 * var(--depth))) rotateY(180deg);
   transform-origin: bottom;
-  background-image: url("https://assets.codepen.io/5896374/tex-metal-floor.jpg");
+  background-image: url("https://res.cloudinary.com/digquktgx/image/upload/v1743521409/Screenshot_2025-04-01_182957_hfxcmk.png");
   background-size: 75%;
   background-repeat: repeat;
   background-position: top right;
@@ -309,96 +309,6 @@ body {
   transform: scale(0.9);
 }
 
-/*-- CUBE REUSABLE OBJECT --*/
-
-.cube {
-  width: var(--cubescale);
-  height: var(--cubescale);
-  position: absolute;
-  pointer-events: none;
-  transform-style: preserve-3d;
-}
-
-.cube > div {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  pointer-events: auto;
-  background-image: url("https://assets.codepen.io/5896374/crate-box.jpg");
-  background-size: cover;
-  box-shadow: inset 0 0 calc(0.25 * var(--cubescale)) rgba(0, 0, 0, 0.5),
-    inset 0 0 calc(0.15 * var(--cubescale)) 0.1em rgba(0, 0, 0, 0.25);
-  border: 2px solid #352a23;
-}
-
-.cube-top {
-  transform: rotateX(90deg) translateZ(calc(var(--cubescale) / 2));
-  background-color: rgba(255, 0, 0, 0.7);
-}
-
-.cube-bottom {
-  transform: rotateX(-90deg) translateZ(calc(var(--cubescale) / 2));
-  background-color: rgba(0, 255, 0, 0.7);
-}
-
-.cube-front {
-  transform: translateZ(calc(var(--cubescale) / 2));
-  background-color: rgba(0, 0, 255, 0.7);
-}
-
-.cube-back {
-  transform: rotateY(180deg) translateZ(calc(var(--cubescale) / 2));
-  background-color: rgba(255, 255, 0, 0.7);
-}
-
-.cube-left {
-  transform: rotateY(-90deg) translateZ(calc(var(--cubescale) / 2));
-  background-color: rgba(0, 255, 255, 0.7);
-}
-
-.cube-right {
-  transform: rotateY(90deg) translateZ(calc(var(--cubescale) / 2));
-  background-color: rgba(255, 0, 255, 0.7);
-}
-
-.cube-1 {
-  bottom: 0;
-  transform: translateZ(calc(var(--depth) - calc(0.5 * var(--cubescale))));
-}
-.cube-2 {
-  bottom: 0;
-  transform: translateZ(calc(var(--depth) - calc(0.55 * var(--cubescale))))
-    translateX(calc(1.05 * var(--cubescale))) rotateY(-5deg);
-}
-.cube-3 {
-  bottom: 0;
-  transform: translateZ(calc(var(--depth) - calc(1.65 * var(--cubescale))))
-    rotateY(-2deg);
-}
-.cube-4 {
-  bottom: var(--cubescale);
-  transform: translateZ(calc(var(--depth) - calc(0.65 * var(--cubescale))))
-    translateX(calc(0.15 * var(--cubescale))) rotateY(-12deg);
-}
-.cube-5 {
-  --cubescale: 30vmin;
-  right: 0;
-  bottom: 0;
-  transform: translateZ(calc(var(--depth) - calc(0.5 * var(--cubescale))));
-}
-.cube-6 {
-  bottom: calc(2 * var(--cubescale));
-  right: calc(0.5 * var(--cubescale));
-  transform: translateZ(calc(var(--depth) - var(--cubescale))) rotateY(-15deg);
-  --cubescale: 15vmin;
-}
-.cube-7 {
-  bottom: 0;
-  transform: translateZ(calc(var(--depth) - calc(0.75 * var(--cubescale))))
-    rotateY(12deg);
-  left: calc(100% - calc(2.75 * var(--cubescale)));
-}
-
 /*-- OBJECTS --*/
 
 [data-comment] {
@@ -487,23 +397,6 @@ body {
   }
 }
 
-.room .outside {
-  position: absolute;
-  top: -50vh;
-  right: -10%;
-  width: 400vw;
-  height: 200vh;
-  background-color: #111;
-  background-image: url("https://assets.codepen.io/5896374/shack-mountain.jpg");
-  background-size: 150vmin;
-  background-position: center;
-  background-repeat: repeat;
-  transform: rotateY(90deg);
-  pointer-events: none;
-  backface-visibility: hidden;
-  transition: all 0.3s ease;
-}
-
 .outside.night {
   opacity: 0;
   background-image: url("https://cybersandbox.ca/wp-content/uploads/2021/11/the-eye.gif");
@@ -542,16 +435,15 @@ body {
 }
 
 .porthole {
-  width: 50vmin;
-  height: 50vmin;
-  background-image: url("https://assets.codepen.io/5896374/porthole-2.png");
+  width: 150vmin;
+  height: 150vmin;
+  background-image: url("https://res.cloudinary.com/digquktgx/image/upload/v1743520083/i-made-a-3d-model-of-saul-goodmans-office-v0-ba1v6ta611v91_b2bi7c.webp");
   background-size: contain;
   background-position: center;
-  top: calc(50% - 25vmin);
+  top: calc(50% - 90vmin);
   right: 99%;
   transform: rotateY(90deg) rotateZ(0) translateX(50%);
   transform-origin: center right;
-  border-radius: 100%;
   backface-visibility: hidden;
   filter: contrast(0.85) saturate(3);
   transition: all 0.3s ease;
@@ -586,7 +478,7 @@ body {
   left: 15%;
   height: 70vmin;
   transform-origin: bottom center;
-  background-image: url("https://assets.codepen.io/5896374/cage-2023.png");
+  background-image: url("https://res.cloudinary.com/digquktgx/image/upload/v1743518889/bne_y9wjsh.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -623,9 +515,9 @@ body {
 }
 
 .door {
-  width: 25%;
-  height: 75%;
-  background-image: url("https://assets.codepen.io/5896374/old-door_1.png");
+  width: 40%;
+  height: 120%;
+  background-image: url("https://res.cloudinary.com/digquktgx/image/upload/v1743521629/chocolate-brown-teak-wood-door-1000x1000_ghysyt.webp");
   background-position: bottom center;
   bottom: 0;
   left: 20%;
@@ -731,7 +623,7 @@ body {
 
 .shelf-level > div:not(.item),
 .cube.shelf > div {
-  background-image: url("https://assets.codepen.io/5896374/old-wood-texture.jpg");
+  background-image: url("https://res.cloudinary.com/digquktgx/image/upload/v1743668744/wood-floor-compressed_yhnv5p.jpg");
 }
 
 .cube.shelf .shelf-level,
@@ -862,21 +754,6 @@ body {
 }
 .item > .cube > .cube-back {
   display: block !important;
-}
-
-.cube.cobblestone > div {
-  background-image: url("https://assets.codepen.io/5896374/cobble.png");
-  border: none !important;
-}
-.cube.minecraft > div {
-  background-image: url("https://assets.codepen.io/5896374/grass-side.png");
-  border: none !important;
-}
-.cube.minecraft > .cube-top {
-  background-image: url("https://assets.codepen.io/5896374/grass-top.png");
-}
-.cube.minecraft > .cube-bottom {
-  background-image: url("https://assets.codepen.io/5896374/grass-bottom.png");
 }
 
 .item .item-inner {
